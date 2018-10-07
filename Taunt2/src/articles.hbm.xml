@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.p3p20.model.Articles" table="articles">
+		<id name="idArticles" type="int" column="idArticles">
+			<generator class="increment" />
+		</id>
+		<property name="nomArticle">
+			<column name="nomArticle" />
+		</property>
+		<property name="titreArticle">
+			<column name="titreArticle" />
+		</property>
+		<property name="contenuArticle">
+			<column name="contenuArticle" />
+		</property>
+		<property name="dateCreation">
+			<column name="dateCreation" />
+		</property>		
+	</class>
+</hibernate-mapping>

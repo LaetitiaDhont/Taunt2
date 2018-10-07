@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.p3p20.model.Users" table="users">
+        <id name="idUtilisateur" type="int" column="idUtilisateur">
+            <generator class="increment" />
+        </id>
+        <property name="mailUtilisateur">
+            <column name="mailUtilisateur" />
+        </property>
+        <property name="mdpUtilisateur">
+            <column name="mdpUtilisateur" />
+        </property>
+    </class>
+</hibernate-mapping>

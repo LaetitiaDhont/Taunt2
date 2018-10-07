@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.p3p20.model.CDC" table="CDC">
+		<id name="idCDC" type="int" column="idCDC">
+			<generator class="increment" />
+		</id>
+		<property name="typeCDC">
+			<column name="typeCDC" />
+		</property>
+		<property name="dureeCDC">
+			<column name="dureeCDC" />
+		</property>
+		<property name="nomLicence">
+			<column name="nomLicence" />
+		</property>
+		<property name="typeLicence">
+			<column name="typeLicence" />
+		</property>
+		<property name="refLicence">
+			<column name="refLicence" />
+		</property>
+		<property name="refExpert">
+			<column name="refExpert" />
+		</property>
+	</class>
+</hibernate-mapping>

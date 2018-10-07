@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.p3p20.model.Experts" table="experts">
+		<id name="idExpert" type="int" column="idExpert">
+			<generator class="increment" />
+		</id>
+		<property name="mailExpert">
+			<column name="mailExpert" />
+		</property>
+		<property name="typeExpert">
+			<column name="typeExpert" />
+		</property>
+		<property name="tarifExpert">
+			<column name="tarifExpert" />
+		</property>
+		<property name="photoExpert">
+			<column name="photoExpert" />
+		</property>
+		<property name="nomExpert">
+			<column name="nomExpert" />
+		</property>
+		<property name="prenomExpert">
+			<column name="prenomExpert" />
+		</property>
+	</class>
+</hibernate-mapping>
